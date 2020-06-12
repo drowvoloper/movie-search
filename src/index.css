@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+}
+
+.App-intro {
+	font-size: 1.4rem;
+	font-family: 'Roboto', sans-serif;
+	line-height: 5rem;
+	padding: 0 1.3rem;
+	text-align: center;
+}
+
+/* Header */
+.App-header {
+	background-color: lightgray;
+	line-height: 3rem;
+	padding: 0 1.3rem;
+}
+
+.App-header h1 {
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Search */
+.search {
+	padding: 0 1.3rem;
+	margin-top: 1em;
+}
+
+.label {
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+	margin-bottom: .7em;
+}
+
+.search input {
+	height: 2.5rem;
+	width: 100%;
+	padding: 0 .4em;
+}
+
+/* Movie */
+.movies {
+	margin-top: 1em;
+	padding: 0 1.3rem;
+}
+.movie {
+	background: #fafafa;
+	box-shadow: 0 0 3px gray;
+	border-radius: 5px;
+	margin: .7em 0;
+	padding: 1em;
+	text-align: center;
+}
+
+.movie h2 {
+	font-size: 1.3rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	display: inline-block;
+	margin: .5em 0;
+	/*margin-right: .5em;
+	margin-bottom: 1em;
+	margin-top: .5em;*/
+}
+
+.movie h2 span {
+	color: gray;
+	font-size: 1.1rem;
+}
+
+.movie p {
+	margin: .5em;
+	text-align: justify;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.movie img {
+	margin: .5em 0;
+}
+
+@media (min-width: 600px) {
+	/* Header */
+	.App-header,
+	.movies,
+	.search {
+		padding: 0 4rem;
+	}
+
+	/* Search */ 
+	.search {
+		display: flex;
+		margin: 0 auto;
+		max-width: 70%;
+	}
+
+	.search .label {
+		align-self: end;
+		margin-right: 1em;
+	}
+
+	.search__btn {
+		max-width: 200px;
+	}
+
+	/* Movie */
+	.movies {
+		margin: 0 auto;
+		max-width: 70%;
+	}
+
+	.movie {
+		display: flex;
+		text-align: left;
+		margin: 2em 0;
+	}
+
+	.movie__text {
+		padding: 0 1em;	
+	}
+
+	.movie p {
+		margin: .5em 0;
+	}
+
+}
